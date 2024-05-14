@@ -15,7 +15,7 @@
 
   # **ROADBLOCKS**
 
-   # (We just need to look up tutorials)
+      # (We just need to look up tutorials)
 
-      Randomly spawning enemies on borders      
-      Making enemy follow player
+      #Randomly spawning enemies on borders      
+      #Making enemy follow player
