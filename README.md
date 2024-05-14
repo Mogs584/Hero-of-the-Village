@@ -18,4 +18,5 @@
       # (We just need to look up tutorials)
 
       #Randomly spawning enemies on borders      
-      #Making enemy follow player
+      #Making enemy follow player      
+      #I have to push the project manually. I watched a couple tutorials and it just won't work.
