@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://jsj7c87a8jvj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nopxw"]
+size = Vector2(47, 67)
+
+[node name="enemy" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_nopxw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
