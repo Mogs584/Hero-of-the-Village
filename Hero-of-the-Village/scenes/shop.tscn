@@ -1,8 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://cjkb1qxpoy0k0"]
 
 [ext_resource type="Texture2D" uid="uid://bjj0cyk0kjxq7" path="res://TileMaps/UI/uipack_rpg_sheet.png" id="1_y73mb"]
-[ext_resource type="Texture2D" uid="uid://b8ujobpqhqxq1" path="res://TilePacks/PNG/buttonLong_blue.png" id="2_qssht"]
-[ext_resource type="Texture2D" uid="uid://clg31xbr8d5bk" path="res://TilePacks/PNG/buttonLong_brown.png" id="3_ru3im"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2lohf"]
 texture = ExtResource("1_y73mb")
@@ -787,9 +785,15 @@ texture_region_size = Vector2i(17, 16)
 [sub_resource type="TileSet" id="TileSet_bo73u"]
 sources/0 = SubResource("TileSetAtlasSource_2lohf")
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_anl63"]
+load_path = "res://.godot/imported/buttonLong_blue.png-c3316c28843faa6da0798eaad1e1a99c.ctex"
+
 [sub_resource type="LabelSettings" id="LabelSettings_8gslj"]
 line_spacing = 6.0
 font_size = 24
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4qk4h"]
+load_path = "res://.godot/imported/buttonLong_brown.png-aae83058f8fecaac74f03e27a08669e7.ctex"
 
 [node name="Shop" type="Node2D"]
 
@@ -804,9 +808,10 @@ offset_bottom = 50.0
 
 [node name="Sprite2D" type="Sprite2D" parent="ButtonLongBlue"]
 position = Vector2(95, 24)
-texture = ExtResource("2_qssht")
+texture = SubResource("CompressedTexture2D_anl63")
 
 [node name="Label" type="Label" parent="ButtonLongBlue"]
+layout_mode = 0
 offset_top = -1.0
 offset_right = 190.0
 offset_bottom = 49.0
@@ -816,4 +821,4 @@ horizontal_alignment = 1
 
 [node name="ButtonLongBrown" type="Sprite2D" parent="."]
 position = Vector2(95, 75)
-texture = ExtResource("3_ru3im")
+texture = SubResource("CompressedTexture2D_4qk4h")
