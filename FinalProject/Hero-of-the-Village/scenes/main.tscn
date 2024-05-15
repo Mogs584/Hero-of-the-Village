@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bkn4el3u238ra"]
+
+[ext_resource type="PackedScene" uid="uid://covr4mwubtam" path="res://scenes/map.tscn" id="1_bm5g7"]
+[ext_resource type="PackedScene" uid="uid://bi2878qu5tbog" path="res://scenes/player.tscn" id="2_rldwf"]
+
+[node name="main" type="Node2D"]
+
+[node name="map" parent="." instance=ExtResource("1_bm5g7")]
+metadata/_edit_lock_ = true
+
+[node name="player" parent="." instance=ExtResource("2_rldwf")]
+position = Vector2(163, 403)
+scale = Vector2(0.3, 0.3)
