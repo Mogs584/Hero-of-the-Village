@@ -15,7 +15,19 @@ func _ready():
 func _process(delta):
 	velocity = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	position += velocity * speed * delta
+	
+	
 
 func _physics_process(delta):
 	velocity *= speed
+	
+	if velocity.length() > 0:
+		$AnimatedSprite2D.animation = "walking"
+	else:
+		$AnimatedSprite2D.animation = "idle"
+	if velocity.x != 0:
+		$AnimatedSprite2D.flip_h = velocity.x < 0
+	
+	
 	move_and_slide()
+
